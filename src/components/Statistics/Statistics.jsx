@@ -1,5 +1,4 @@
 const Statistics = ({
-  title,
   goodFeedback,
   neutralFeedback,
   badFeedback,
@@ -8,7 +7,6 @@ const Statistics = ({
 }) => {
   return (
     <div>
-      <h2>{title}</h2>
       <p>Good:{goodFeedback}</p>
       <p>Neutral:{neutralFeedback}</p>
       <p>Bad:{badFeedback}</p>

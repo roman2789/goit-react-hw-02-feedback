@@ -1,7 +1,6 @@
-const Feedback = ({ title, feedbackVariants, onFeedbackCklick }) => {
+const FeedbackOptions = ({ feedbackVariants, onFeedbackCklick }) => {
   return (
-    <div>
-      <h1>{title}</h1>
+    <>
       {feedbackVariants.map(feedbackVariant => (
         <button
           key={feedbackVariant}
@@ -12,8 +11,8 @@ const Feedback = ({ title, feedbackVariants, onFeedbackCklick }) => {
           {feedbackVariant}
         </button>
       ))}
-    </div>
+    </>
   );
 };
 
-export default Feedback;
+export default FeedbackOptions;
