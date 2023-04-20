@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const FeedbackOptions = ({ feedbackVariants, onFeedbackCklick }) => {
   return (
     <>
@@ -13,6 +15,11 @@ const FeedbackOptions = ({ feedbackVariants, onFeedbackCklick }) => {
       ))}
     </>
   );
+};
+
+FeedbackOptions.propTypes = {
+  feedbackVariants: PropTypes.array.isRequired,
+  onFeedbackCklick: PropTypes.func.isRequired,
 };
 
 export default FeedbackOptions;
