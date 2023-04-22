@@ -1,19 +1,20 @@
 import PropTypes from 'prop-types';
+import { FeedbackSection, FeedbackButtons } from './FeedbackOptionsStyled';
 
 const FeedbackOptions = ({ feedbackVariants, onFeedbackCklick }) => {
   return (
-    <>
+    <FeedbackSection>
       {feedbackVariants.map(feedbackVariant => (
-        <button
+        <FeedbackButtons
           key={feedbackVariant}
           type="button"
           onClick={onFeedbackCklick}
           name={feedbackVariant}
         >
           {feedbackVariant}
-        </button>
+        </FeedbackButtons>
       ))}
-    </>
+    </FeedbackSection>
   );
 };
 

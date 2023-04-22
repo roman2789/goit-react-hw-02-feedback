@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { StatisticsWrapper, StatItems } from './StatisticsStyled';
 
 const Statistics = ({
   goodFeedback,
@@ -8,13 +9,13 @@ const Statistics = ({
   goodFeedbackPercentage,
 }) => {
   return (
-    <div>
-      <p>Good:{goodFeedback}</p>
-      <p>Neutral:{neutralFeedback}</p>
-      <p>Bad:{badFeedback}</p>
-      <p>Total:{totalFeedbacks}</p>
-      <p>Positive Feedback:{goodFeedbackPercentage}%</p>
-    </div>
+    <StatisticsWrapper>
+      <StatItems>Good:{goodFeedback}</StatItems>
+      <StatItems>Neutral:{neutralFeedback}</StatItems>
+      <StatItems>Bad:{badFeedback}</StatItems>
+      <StatItems>Total:{totalFeedbacks}</StatItems>
+      <StatItems>Positive Feedback:{goodFeedbackPercentage}%</StatItems>
+    </StatisticsWrapper>
   );
 };
 
