@@ -19,7 +19,7 @@ const FeedbackOptions = ({ feedbackVariants, onFeedbackCklick }) => {
 };
 
 FeedbackOptions.propTypes = {
-  feedbackVariants: PropTypes.array.isRequired,
+  feedbackVariants: PropTypes.arrayOf(PropTypes.object).isRequired,
   onFeedbackCklick: PropTypes.func.isRequired,
 };
 
