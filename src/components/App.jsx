@@ -4,6 +4,7 @@ import Statistics from './Statistics/Statistics';
 import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
 import Notification from './Notification/Notification';
 import { Container } from './AppStyled';
+import { GlobalStyles } from 'GlobalStyles';
 
 class App extends Component {
   state = {
@@ -31,6 +32,7 @@ class App extends Component {
     const goodFeedbackPercentage = this.countPositiveFeedbackPercentage();
     return (
       <Container>
+        <GlobalStyles />
         <Section title="Please leave feedback">
           <FeedbackOptions
             feedbackVariants={Object.keys(this.state)}
